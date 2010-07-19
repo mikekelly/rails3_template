@@ -1,4 +1,4 @@
-run "rm -Rf README public/index.html public/javascripts/* test app/views/layouts/*"
+run "rm -Rf README public/index.html public/javascripts/* test" # app/views/layouts/*"
 
 gem 'inherited_resources', '>=1.1.2'
 gem 'will_paginate', '>=3.0.pre'
