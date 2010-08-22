@@ -40,8 +40,6 @@ run "bundle install"
 generate "formtastic:install"
 run "rake flutie:install"
 
-#run "rm public/stylesheets/*"
-
 get "http://github.com/rails/jquery-ujs/raw/master/src/rails.js", "public/javascripts/rails.js"
 get "http://github.com/mikekelly/rails3_template/raw/master/screen.css" ,"public/stylesheets/screen.css"
 get "http://github.com/mikekelly/rails3_template/raw/master/application.html.erb" ,"app/views/layouts/application.html.erb"
@@ -54,4 +52,4 @@ git :init
 git :add => '.'
 git :commit => '-am "Initial commit"'
  
-puts "SUCCESS!"
+puts "-- Mike's rails3 template applied! --"

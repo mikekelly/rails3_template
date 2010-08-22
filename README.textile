@@ -1,1 +1,7 @@
+A very minimal rails 3 template :)
+
 <pre><code>rails new app_name -m http://github.com/mikekelly/rails3_template/raw/master/main.rb</code></pre>
+
+- jQuery 1.4.2
+- formtastic
+- flutie
