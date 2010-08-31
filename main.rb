@@ -1,6 +1,6 @@
 run "rm -Rf README public/index.html public/javascripts/* test" # app/views/layouts/*"
 
-#gem 'devise'
+gem 'devise'
 #gem 'will_paginate', '>=3.0.pre'
 #gem 'friendly_id', '~>3.1'
 gem "formtastic", :git => "git://github.com/justinfrench/formtastic.git", :branch => "rails3"
@@ -43,8 +43,7 @@ run "rake flutie:install"
 get "http://github.com/rails/jquery-ujs/raw/master/src/rails.js", "public/javascripts/rails.js"
 get "http://github.com/mikekelly/rails3_template/raw/master/screen.css" ,"public/stylesheets/screen.css"
 get "http://github.com/mikekelly/rails3_template/raw/master/application.html.erb" ,"app/views/layouts/application.html.erb"
-
-#get "http://github.com/mikekelly/infoether-framework/raw/master/app/views/layouts/application.html.erb" ,"app/views/layouts/application.html.erb" 
+get "http://github.com/mikekelly/rails3_template/raw/master/application_helper.rb" ,"app/helpers/application_helper.rb" 
 #get "http://github.com/mikekelly/infoether-framework/raw/master/public/stylesheets" ,"app/views/layouts/application.html.erb"  
 #get "http://github.com/dcrec1/rails3_template/raw/master/factory_girl.rb", "features/support/factory_girl.rb"
 
