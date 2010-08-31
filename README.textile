@@ -5,3 +5,4 @@ A very minimal rails 3 template :)
 - jQuery 1.4.2
 - formtastic
 - flutie
+- devise [not installed; rails g devise:install]

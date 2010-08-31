@@ -1,10 +1,13 @@
-run "rm -Rf README public/index.html public/javascripts/* test" # app/views/layouts/*"
+run "rm -Rf README public/index.html public/javascripts/* test app/views/layouts/* app/helpers/*"
 
-gem 'devise'
-#gem 'will_paginate', '>=3.0.pre'
-#gem 'friendly_id', '~>3.1'
 gem "formtastic", :git => "git://github.com/justinfrench/formtastic.git", :branch => "rails3"
 gem 'flutie'
+
+gem "devise"
+gem "cancan"
+
+#gem 'will_paginate', '>=3.0.pre'
+#gem 'friendly_id', '~>3.1'
 
 #gem 'rspec', '>=2.0.0.alpha.11', :group => :test
 #gem 'rspec-rails', '>=2.0.0.alpha.11', :group => :test
@@ -51,4 +54,4 @@ git :init
 git :add => '.'
 git :commit => '-am "Initial commit"'
  
-puts "-- Mike's rails3 template applied! --"
+puts "!! Fact x Importance = News !!"
