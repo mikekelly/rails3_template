@@ -43,12 +43,12 @@ run "bundle install"
 generate "formtastic:install"
 run "rake flutie:install"
 
-get "http://github.com/rails/jquery-ujs/raw/master/src/rails.js", "public/javascripts/rails.js"
-get "http://github.com/mikekelly/rails3_template/raw/master/screen.css" ,"public/stylesheets/screen.css"
-get "http://github.com/mikekelly/rails3_template/raw/master/application.html.erb" ,"app/views/layouts/application.html.erb"
-get "http://github.com/mikekelly/rails3_template/raw/master/application_helper.rb" ,"app/helpers/application_helper.rb" 
-#get "http://github.com/mikekelly/infoether-framework/raw/master/public/stylesheets" ,"app/views/layouts/application.html.erb"  
-#get "http://github.com/dcrec1/rails3_template/raw/master/factory_girl.rb", "features/support/factory_girl.rb"
+get "https://github.com/rails/jquery-ujs/raw/master/src/rails.js", "public/javascripts/rails.js"
+get "https://github.com/mikekelly/rails3_template/raw/master/screen.css" ,"public/stylesheets/screen.css"
+get "https://github.com/mikekelly/rails3_template/raw/master/application.html.erb" ,"app/views/layouts/application.html.erb"
+get "https://github.com/mikekelly/rails3_template/raw/master/application_helper.rb" ,"app/helpers/application_helper.rb" 
+#get "https://github.com/mikekelly/infoether-framework/raw/master/public/stylesheets" ,"app/views/layouts/application.html.erb"  
+#get "https://github.com/dcrec1/rails3_template/raw/master/factory_girl.rb", "features/support/factory_girl.rb"
 
 git :init
 git :add => '.'
