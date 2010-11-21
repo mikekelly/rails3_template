@@ -1,6 +1,6 @@
 run "rm -Rf README public/index.html public/javascripts/* test app/views/layouts/* app/helpers/*"
 
-gem "formtastic", :git => "git://github.com/justinfrench/formtastic.git", :branch => "rails3"
+gem "formtastic", "1.1" 
 gem 'flutie'
 
 gem "devise"
