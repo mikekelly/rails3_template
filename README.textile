@@ -1,6 +1,6 @@
 A very minimal rails 3 template :)
 
-<pre><code>wget --no-check-certificate http://github.com/mikekelly/rails3_template/raw/master/main.rb -0 /tmp/rails3_template.rb</code></pre>
+<pre><code>wget --no-check-certificate https://github.com/mikekelly/rails3_template/raw/master/main.rb -O /tmp/rails3_template.rb</code></pre>
 
 <pre><code>rails new app -m /tmp/rails3_template.rb</code></pre>
 
