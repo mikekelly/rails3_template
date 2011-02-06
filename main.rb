@@ -38,9 +38,9 @@ generate "devise:install"
 
 run "rake flutie:install"
 
-get "https://github.com/mikekelly/rails3_template/raw/master/screen.css" ,"public/stylesheets/screen.css"
-get "https://github.com/mikekelly/rails3_template/raw/master/application.html.erb" ,"app/views/layouts/application.html.erb"
-get "https://github.com/mikekelly/rails3_template/raw/master/application_helper.rb" ,"app/helpers/application_helper.rb" 
+run "wget --no-check-certificate 'https://github.com/mikekelly/rails3_template/raw/master/screen.css' -0 public/stylesheets/screen.css"
+get "wget --no-check-certificate 'https://github.com/mikekelly/rails3_template/raw/master/application.html.erb'  -0 app/views/layouts/application.html.erb"
+get "wget --no-check-certificate 'https://github.com/mikekelly/rails3_template/raw/master/application_helper.rb' -0 app/helpers/application_helper.rb"
 
 git :init
 git :add => '.'

@@ -1,8 +1,10 @@
 A very minimal rails 3 template :)
 
-<pre><code>rails new app_name -m http://github.com/mikekelly/rails3_template/raw/master/main.rb</code></pre>
+<pre><code>wget --no-check-certificate http://github.com/mikekelly/rails3_template/raw/master/main.rb -0 /tmp/rails3_template.rb</code></pre>
 
-- jQuery 1.4.2
-- formtastic
+<pre><code>rails new app -m /tmp/rails3_template.rb</code></pre>
+
+- jQuery
+- mongoid
 - flutie
-- devise [not installed; rails g devise:install]
+- devise
