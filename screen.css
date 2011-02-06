@@ -1,4 +1,8 @@
-body { background-color: #dadada;}
+body {
+ background-color: #dadada;
+ font-family: "Droid Sans", arial, serif;
+ font-size: 14px;
+}
 
 .content {
     background: #fff;

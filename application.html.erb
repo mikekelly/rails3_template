@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>New Application - <%= content_for?(:title) ? yield(:title) :  "Default Page Title" %></title>
+  <title>New App - <%= content_for?(:title) ?  yield(:title) : 'Default Title'  %></title>
   <%= stylesheet_link_tag :flutie, 'screen', :cache => true %>
-  <%= javascript_include_tag "http://code.jquery.com/jquery-1.4.4.min.js" %>
+  <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Droid+Sans" %>
+  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" %>
   <%= javascript_include_tag 'rails' %>
   <%= csrf_meta_tag %>
 </head>
 <body>
-<div class="content">
-  <div class="flash">
-    <% if alert %><div class="error"><%= alert %></div><% end %>
-    <% if notice %><div class="notice"><%= notice %></div><% end %>
+  <div class="content">
+    <div class="flash">
+      <% if alert %><div class="error"><%= alert %></div><% end %>
+      <% if notice %><div class="notice"><%= notice %></div><% end %>
+    </div>
+    <%= yield %>
   </div>
-  <%= yield %>
-</div>
 </body>
 </html>
+
