@@ -1,13 +1,13 @@
 run "rm -Rf README public/index.html public/javascripts/* test app/views/layouts/* app/helpers/*"
 
-gem "mongoid", "~>2.0"
+gem "mongoid", "2.0.0.rc.6"
 gem "bson_ext", "~>1.2"
 
 gem "flutie", "~>1.1"
 gem "devise"
 #gem "cancan"
 
-gem "jquery-rails"
+gem "jquery-rails", ">= 0.2.6"
 
 gem "rspec-rails", "~>2.4", :group => :development
 
